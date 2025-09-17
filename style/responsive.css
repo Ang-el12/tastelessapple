@@ -1,0 +1,329 @@
+/* ===== MEDIA QUERIES FOR SMALL SCREENS ===== */
+
+/* ===== SCALING BELOW 482PX (phones, very small screens) ===== */
+@media (max-width: 481px) {
+  /* Shrink card */
+  .window {
+    width: 90%;          /* smaller width to fit screen */
+    padding: 10px;       /* shrink padding */
+  }
+
+  /* Keep desktop layout for profile (avatar + info) */
+  .profile {
+    flex-direction: row;  
+    align-items: flex-start;
+    gap: 10px;           /* smaller gap between avatar and info */
+  }
+
+  /* Shrink avatar */
+  .avatar img {
+    width: 90px;
+    height: 90px;
+  }
+
+  /* Shrink username font */
+  .profile h1 {
+    font-size: 18px;
+  }
+
+  /* Shrink profile info text */
+  .profile .info p {
+    font-size: 10px;
+  }
+
+  /* Social icons stay in a row and shrink */
+  .socials {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 4px;
+  }
+
+  .socials a {
+    font-size: 14px;
+  }
+
+  /* Tabs stay in a row and shrink */
+  .tabs {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 4px;
+  }
+
+  .tabs button {
+    padding: 3px 6px;
+    font-size: 10px;
+  }
+
+  /* Bottom navigation scaled */
+  .bottom-nav {
+    padding: 4px;
+    gap: 6px;
+  }
+
+  .bottom-nav button {
+    padding: 3px 6px;
+    font-size: 10px;
+  }
+
+  .bottom-nav .linkbox {
+    width: 120px;
+    font-size: 10px;
+    padding: 2px 4px;
+  }
+}
+
+/* Phones / very small devices (≤ 360px) */
+@media (max-width: 360px) {
+  .window {
+    width: 95%;
+    padding: 8px;
+  }
+
+  .profile {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .avatar img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .profile h1 {
+    font-size: 16px;
+  }
+
+  .profile .info p {
+    font-size: 9px;
+  }
+
+  .tabs {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 3px;
+  }
+
+  .tabs button {
+    padding: 2px 4px;
+    font-size: 9px;
+  }
+
+  .socials {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 3px;
+  }
+
+  .socials a {
+    font-size: 12px;
+  }
+
+  .bottom-nav {
+    padding: 3px;
+    gap: 4px;
+  }
+
+  .bottom-nav button {
+    padding: 2px 4px;
+    font-size: 9px;
+  }
+
+  .bottom-nav .linkbox {
+    width: 100px;
+    font-size: 9px;
+    padding: 2px 3px;
+  }
+}
+
+/* Phones / small devices (≤ 480px) */
+@media (max-width: 480px) {
+  .window {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .profile {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .avatar img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .profile h1 {
+    font-size: 18px;
+  }
+
+  .profile .info p {
+    font-size: 10px;
+  }
+
+  .tabs {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 4px;
+  }
+
+  .tabs button {
+    padding: 3px 6px;
+    font-size: 10px;
+  }
+
+  .socials {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 4px;
+  }
+
+  .socials a {
+    font-size: 14px;
+  }
+
+  .bottom-nav {
+    padding: 4px;
+    gap: 6px;
+  }
+
+  .bottom-nav button {
+    padding: 3px 6px;
+    font-size: 10px;
+  }
+
+  .bottom-nav .linkbox {
+    width: 120px;
+    font-size: 10px;
+    padding: 2px 4px;
+  }
+}
+
+/* Tablets (481px – 1024px) */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .window {
+    width: 80%;
+    padding: 15px;
+  }
+
+  .profile {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .avatar img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .profile h1 {
+    font-size: 24px;
+  }
+
+  .profile .info p {
+    font-size: 12px;
+  }
+
+  .tabs {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 6px;
+  }
+
+  .tabs button {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  .socials {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 6px;
+  }
+
+  .socials a {
+    font-size: 16px;
+  }
+
+  .bottom-nav {
+    padding: 6px;
+    gap: 10px;
+  }
+
+  .bottom-nav button {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  .bottom-nav .linkbox {
+    width: 160px;
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+}
+
+/* Desktop (≥ 1025px) */
+@media (min-width: 1025px) {
+  .window {
+    width: 600px;
+    padding: 20px;
+  }
+
+  .profile {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .avatar img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .profile h1 {
+    font-size: 32px;
+  }
+
+  .profile .info p {
+    font-size: 14px;
+  }
+
+  .tabs {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 8px;
+  }
+
+  .tabs button {
+    padding: 8px 15px;
+    font-size: 16px;
+  }
+
+  .socials {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 8px;
+  }
+
+  .socials a {
+    font-size: 18px;
+  }
+
+  .bottom-nav {
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .bottom-nav button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .bottom-nav .linkbox {
+    width: 180px;
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+}

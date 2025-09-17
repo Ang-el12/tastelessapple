@@ -1,0 +1,143 @@
+/* ===== Base Layout ===== */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #fff url('https://i.pinimg.com/1200x/32/84/f3/3284f3e030f32e4029da763e16934f91.jpg') repeat;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+/* ===== Window / Card Wrapper ===== */
+.window {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  background: #fefefe;
+  border: 2px solid #ff7ad9;
+}
+
+/* ===== Header ===== */
+.header {
+  background: #ff7ad9;
+  color: #fff;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+/* ===== Profile Section ===== */
+.profile {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.profile h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 32px;
+  color: #7aaaff;
+}
+
+.profile .info p {
+  margin: 2px 0;
+  font-size: 14px;
+}
+
+.avatar img {
+  width: 200px;
+  height: 200px;
+  border-radius: 0%; /* square for avatar */
+  border: 3px dashed #ff7ad9;
+  box-shadow: 0 0 10px rgba(255, 122, 217, 0.7);
+  object-fit: cover;
+}
+
+.socials a {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+/* ===== Tabs ===== */
+.tabs {
+  background: #e8e8ff;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.tabs button {
+  padding: 5px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #c0d8ff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.tabs button:hover {
+  background: #a0bfff;
+}
+
+/* ===== Content ===== */
+.content {
+  padding: 15px;
+}
+
+.content h2 {
+  font-family: 'Pacifico', cursive;
+  color: #ff7ad9;
+  margin-bottom: 10px;
+}
+
+/* ===== Bottom Navigation ===== */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  backdrop-filter: blur(6px);
+}
+
+.bottom-nav button {
+  background: #ff7ad9;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.bottom-nav button:hover {
+  background: #ff4db8;
+}
+
+.bottom-nav .linkbox {
+  padding: 6px 10px;
+  border: 1px solid #ff7ad9;
+  border-radius: 6px;
+  background: #222;
+  color: #fff;
+  font-size: 13px;
+  width: 180px;
+  text-align: center;
+}
