@@ -89,6 +89,40 @@ body {
   background: #a0bfff;
 }
 
+/* Tab button active state */
+.tabs .tab-button.active {
+  background: #a0bfff;
+  font-weight: bold;
+}
+
+/* Tab button active state */
+.tabs .tab-button.active {
+  background: #a0bfff;
+  font-weight: bold;
+}
+
+/* Tab content */
+.tab-content {
+  margin-top: 15px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.tab-panel {
+  display: none; /* all hidden by default */
+}
+
+.tab-panel.active {
+  display: block; /* only show when active */
+}
+
 /* ===== Content ===== */
 .content {
   padding: 15px;
