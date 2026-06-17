@@ -1,0 +1,9 @@
+{
+    "background.backgroundOpacity": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+    ],
+    "liveServer.settings.fullReload": true
+}

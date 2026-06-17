@@ -1,0 +1,7 @@
+body {
+    background-image: url(./images/background.jpg);
+    background-size: 600px 700px;
+    background-position: center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
