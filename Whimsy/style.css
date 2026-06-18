@@ -5,3 +5,8 @@ body {
     background-repeat: repeat;
     background-attachment: fixed;
 }
+
+header {
+    font-family: 'HughIsLife';
+    src: url(/fonts/HughisLife.ttf);
+}
