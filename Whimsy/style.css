@@ -52,19 +52,41 @@ header {
 }
 
 /* Middle Row Flex Container */
-.content-row {
+.main-box {
     display: flex;
-    flex-direction: row;
     flex-grow: 1;
 }
 
-.sidebar-box {
+.left-sidebar-box {
     background-color: #ffcccc;
     width: 250px;
 }
 
-.main-box {
+.right-sidebar-box {
+    background-color: #ffcccc;
+    width: 250px;
+}
+
+.content-box {
     background-color: antiquewhite;
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex;
+    gap: 15px;
+    padding: 50px;
+}
+
+.inner-box {
+    border: 2px dashed #ffcccc;
+    background-color: #ffffff;
+    flex-grow: 0;
+    height: 100px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 400px;
 }
 
