@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Page</title>
+    <link rel="stylesheet" href="style.css">
+
+<style>
+    body {
+    background-image: url(./images/empty-flowers.jpg);
+    background-size: 600px 900px;
+    background-position: center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: sans-serif;
+}
+/* Fixed full-screen animated background canvas */
+    #waterCanvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: 1;
+    }
+    /* Pushes layout elements over the background canvas */
+    .site-container {
+            position: relative;
+            z-index: 2;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+}
+</style>
+</head>
+
+<body>
+
+    <!-- Dynamic Canvas Container -->
+    <canvas id="waterCanvas"></canvas>
+
+    <div class="site-container">
+    <!--Header Block-->
+    <header class="wireframe-box2 header-box2">
+     Welcome
+    </header>
+
+    <!--Main Content Row-->
+    <div class="main-box2">
+        <aside class="wireframe-box2 left-sidebar-box2">
+         Left-Sidebar
+        </aside>
+
+    <main class="wireframe-box content-box2"> 
+        <!-- New inner grid of boxes -->
+         <div class="inner-box2 feature-1">Feature 1</div>
+         <div class="inner-box2 feature-2">Feature 2</div>
+         <div class="inner-box2 feature-3">Feature 3</div>
+    </main>
+
+        <!-- Sidebar 2 -->
+        <aside class="wireframe-box2 right-sidebar-box2">
+         Right-Sidebar
+        </aside>   
+        </div>
+
+    <!-- Footer Block -->
+     <footer class="wireframe-box2 footer-box2">
+        Footer Area
+     </footer>
+    </div>
+        <!-- Link your external script file here -->
+    <script src="ripple.js"></script>
+</body>
+</html>
