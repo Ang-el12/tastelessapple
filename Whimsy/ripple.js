@@ -69,9 +69,9 @@ function disturb(dx, dy) {
     dx <<= 0;
     dy <<= 0;
 
-    const radiusX = 22;
-    const radiusY = 7;
-    const angle = 5 * Math.PI / 180;
+    const radiusX = 20;
+    const radiusY = 3;
+    const angle = 3 * Math.PI / 180;
 
     const cos = Math.cos(angle);
     const sin = Math.sin(angle);
@@ -191,7 +191,7 @@ function disturb(dx, dy) {
             Math.random() * height
         );
 
-    }, 700);
+    }, 50);
 
     // Handle resizing
     window.addEventListener("resize", function () {
